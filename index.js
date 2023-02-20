@@ -5,6 +5,6 @@ const server = http.createServer((req, res) => {             // creating HTTP se
     res.end();
 });
 
-server.listen(3000, () => {                                  // Setting up server at port 3000
+server.listen(process.env.PORT || 3000, () => {                                  // Setting up server at port 3000
     console.log("Server is up and running on port 3000");
 });
